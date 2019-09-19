@@ -12,7 +12,8 @@
 <%--}--%>
 <%--%>--%>
 <c:forEach var="beer" items="${styles}">
-    <br/> {beer}
+   
+    <br/> ${beer}
     </c:forEach>
 
 </body>

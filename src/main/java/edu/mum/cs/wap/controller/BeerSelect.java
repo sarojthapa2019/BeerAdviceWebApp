@@ -9,7 +9,7 @@ import java.util.*;
 
 @WebServlet("/beer")
 public class BeerSelect extends HttpServlet {
-	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		String c = request.getParameter("color");
 		BeerExpert be = new BeerExpert();
 		List result = be.getBrands(c);
