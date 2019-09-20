@@ -1,4 +1,6 @@
 <%@ page import="java.util.*" %>
+<%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <body>
@@ -11,9 +13,10 @@
 <%--out.print("<br>try: " + it.next());--%>
 <%--}--%>
 <%--%>--%>
-<c:forEach var="beer" items="${styles}">
-   
-    <br/> ${beer}
+
+
+<c:forEach var="i" items="${styles}" >
+    <span><c:out value=" ${i}" /> </span>
     </c:forEach>
 
 </body>
